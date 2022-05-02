@@ -1,10 +1,46 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>无标题文档</title>
+<span class="STYLE22"><span class="STYLE15"><span class="STYLE16">登陆页面
+</span></span><span class="STYLE16">
+</title>
+</span>
+<script type="text/javascript" language="javascript">
+function CheckLogin()
+{
+var usrName = document.getElementById("txtUserName");
+var pwd = document.getElementById("txtPassword");
+if(usrName && pwd)
+{
+if(usrName.value == "123" && pwd.value == "123")
+{
+alert("登录成功");
+location.href="index.html";
+}
+else
+{
+alert("登录失败");
+}
+}
+}
+</script>
 </head>
-
 <body>
-</body>
-</html>
+</div>
+<div>
+<table width="323" height="148">
+<tr>
+<td width="64"><span class="STYLE1">用户名</span>:</td>
+<td width="218">
+<input id="txtUserName" type="text" /></td>
+</tr>
+<tr>
+<td><span class="STYLE1">密码</span></td>
+<td>
+<input id="txtPassword" type="password" /></td>
+</tr>
+<tr>
+<td colspan="2">
+<input type="submit" onclick="javascript:CheckLogin()" value="确定"/></td>
+</tr>
+</table>
+<span class="STYLE2">用户名为：123 密码为：123</span><span class="STYLE17"> 【登陆成功可进入下一页】【 否则显示登陆失败对话框 】</span><span class="STYLE19">｛返回首页</span></a><span class="STYLE18"><span class="STYLE19">｝</span></span></div>
+<p> </p>
+<p><a href="four.html" class="STYLE20">匿名登陆</a>
